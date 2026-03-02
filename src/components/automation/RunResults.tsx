@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Download, RefreshCw, ChevronLeft, Filter, Zap, DollarSign, Briefcase, Clock, CheckCircle2, XCircle } from 'lucide-react';
+import { Download, RefreshCw, ChevronLeft, Filter, Zap, Clock, CheckCircle2, XCircle } from 'lucide-react';
 
 export interface RunLog {
   id: string;

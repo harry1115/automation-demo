@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, MoreHorizontal, Filter, Download, Plus, Search, ChevronDown, CheckSquare, Square } from 'lucide-react';
+import { Mail, Phone, MoreHorizontal, Filter, Download, Plus, Search, CheckSquare, Square } from 'lucide-react';
 
 export interface Candidate {
   id: string;

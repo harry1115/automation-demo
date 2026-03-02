@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { 
   Activity, Zap, Play, CheckCircle2, Plus, Trash2, 
-  ChevronDown, Calendar, User, Mail, Link, Lock, Monitor, X,
+  ChevronDown, Calendar, User, Mail, Link, Monitor, X,
   FileText, Users, Settings, CheckSquare, Square
 } from 'lucide-react';
 import { RunLog } from './RunResults';
 import { CandidateList, mockCandidates } from '../candidates/CandidateList';
-import { TaskList, mockTasks } from '../tasks/TaskList';
+import { mockTasks } from '../tasks/TaskList';
 
 export const ProjectCandidateList: React.FC<{
   selectedIds: string[];
@@ -122,7 +122,6 @@ export const ProjectCandidateList: React.FC<{
 
 export const AgentSimulation: React.FC<{ logs?: RunLog[], isCreating?: boolean }> = ({ logs, isCreating = false }) => {
   // --- Bot Analysis State ---
-  const [dateRange, setDateRange] = useState('Last 7 Days');
   
   // --- Bot Settings State ---
   // Trigger

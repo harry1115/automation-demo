@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { 
-  Zap, Plus, ChevronDown, User, Mail, Globe, Lock, Bold, Italic, Underline, 
-  Code, Link, Image, Hash, AlignLeft, AlignCenter, AlignRight, AlignJustify, 
-  List, ListOrdered, Indent, Settings, Bot
+  Zap, Plus, ChevronDown, User, Mail, Bold, Italic, Underline, 
+  Code, Link, Image, AlignLeft, AlignCenter, AlignRight, 
+  List, ListOrdered, Settings, Bot
 } from 'lucide-react';
 
 export const TriggerWorkflow: React.FC = () => {

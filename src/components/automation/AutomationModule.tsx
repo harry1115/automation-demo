@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Plus, Play, Pause, AlertCircle, CheckCircle, ChevronLeft, Settings, Clock, Activity, Zap, Layers, ArrowRight, ChevronRight } from 'lucide-react';
+import { Plus, Pause, AlertCircle, CheckCircle, ChevronLeft, Clock, Activity, Zap, Layers } from 'lucide-react';
 
 interface RunLog {
   id: string;
@@ -55,7 +55,7 @@ interface AutomationModuleProps {
 }
 
 export const AutomationModule: React.FC<AutomationModuleProps> = ({ onSelectAutomation, onCreateAutomation, onBack }) => {
-  const [automations, setAutomations] = useState<Automation[]>(mockAutomations);
+  const [automations] = useState<Automation[]>(mockAutomations);
 
   const getStatusIcon = (status: Automation['status']) => {
     switch (status) {

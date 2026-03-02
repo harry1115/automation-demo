@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { AgentSimulation } from './AgentSimulation';
 import { RunResults, RunLog, mockLogs } from './RunResults';
-import { LayoutDashboard, List, ArrowLeft, Download, RefreshCw, Power } from 'lucide-react';
+import { LayoutDashboard, List, ArrowLeft } from 'lucide-react';
 
 interface AutomationDetailProps {
   automationName: string;

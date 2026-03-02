@@ -4,14 +4,13 @@ import { AutomationModule } from '../automation/AutomationModule';
 import { CandidateList } from '../candidates/CandidateList';
 import { AutomationDetail } from '../automation/AutomationDetail';
 import { AgentSimulation } from '../automation/AgentSimulation';
-import { Layout, ListTodo, ChevronRight } from 'lucide-react';
 
 export const MainLayout: React.FC = () => {
   const [activeLeftModule, setActiveLeftModule] = useState<'chat' | 'automation'>('chat');
   const [selectedAutomation, setSelectedAutomation] = useState<string | null>(null);
   const [rightPanelView, setRightPanelView] = useState<'candidates' | 'automation-results' | 'automation-create'>('candidates');
 
-  const handleAutomationSelect = (automationId: string, automationName: string) => {
+  const handleAutomationSelect = (_automationId: string, automationName: string) => {
     setSelectedAutomation(automationName);
     setRightPanelView('automation-results');
   };

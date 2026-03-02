@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { CheckSquare, Calendar, Clock, AlertCircle, MoreHorizontal, ChevronRight } from 'lucide-react';
+import { CheckSquare, Clock, MoreHorizontal, ChevronRight } from 'lucide-react';
 
 export interface Task {
   id: string;
